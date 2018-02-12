@@ -2,8 +2,8 @@
 
 # build the docs
 cd docs
-make clean
-make html
+/Users/adamsm/env_sphinx/bin/sphinx-build clean
+/Users/adamsm/env_sphinx/bin/sphinx-build  html
 cd ..
 
 # commit and push
