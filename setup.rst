@@ -18,10 +18,21 @@ On a mac you can just:
 `brew install python3`.
 
 
+Environment
+===========
+
+You need to make sure you're in the correct python environment before doing the installations.
+
+WINDOWS USERS - You need to be on the command line, if using Anaconda (you should be) look for the anaconda command prompt in your installed programs, it should be there. That should open a version of your command prompt with the prefix (Anaconda).
+
+MAC USERS - You'll need to create a new python3 environment for databaker work using virtual env. Navigate to a suitable directory then `python3 -m venv <env name>` followed by `source <env name>/bin/activate`.
+
+
 
 Install
 =========
 
+Use the following commands on the command line.
 
 `pip install pandas`
 
@@ -30,3 +41,9 @@ Install
 `pip install jupyter`
 
 Some of these may say "already installed" but that's fine. Better safe than sorry.
+
+
+Open a Jupyter Notebook
+=======================
+
+Still on the command line. If you enter 'jupyer notebook' it should spawn a new notebook for you to use.
