@@ -1,0 +1,127 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Selection, Tips &amp; Tricks &#8212; Databaker 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Examples" href="examples.html" />
+    <link rel="prev" title="Selection Methods" href="selection.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="selection-tips-tricks">
+<h1>Selection, Tips &amp; Tricks<a class="headerlink" href="#selection-tips-tricks" title="Permalink to this headline">¶</a></h1>
+<p>The following are useful approaches to data selection.</p>
+<div class="section" id="adding-and-subtracting-cells">
+<h2>Adding and Subtracting Cells<a class="headerlink" href="#adding-and-subtracting-cells" title="Permalink to this headline">¶</a></h2>
+<p>Probably the most powerful feature of databaker is the ease of adding or subtracting selections form each other.</p>
+<p>Consider the following:</p>
+<p><cite>allData = tab.excel_ref(“A2”).expand(DOWN).expand(RIGHT)</cite></p>
+<p><cite>footer = tab.excel_ref(“A50”).expand(DOWN).expand(RIGHT)</cite></p>
+<p><cite>dataIWant = allData - footer</cite></p>
+<p>Which does exactly what you’d think. Resulting in everything to the right and below A2 being added to the dataIWant variable
+- with anything to the right or below A50 removed.</p>
+<p>Adding selections together is accomplished with the “|” symbol.</p>
+<p>So <cite>foo = tab.excel_ref(“A2”) | tab.excel_ref(“E5”)</cite> results in a selection containing just cells A2 and E5.</p>
+</div>
+<div class="section" id="looking-at-xycells">
+<h2>Looking at XYCells<a class="headerlink" href="#looking-at-xycells" title="Permalink to this headline">¶</a></h2>
+<p>The ‘cells’ we talk about when selecting using databaker represent a python object called an xyCell.</p>
+<p>If you print one of those cells it will return a call reference and value,</p>
+<p>There are times where you will want to reference the value directly (for IF statments and other comparisons). You can do this
+by referencing the .value property of the cell as shown below:</p>
+<img alt="_images/usingCellValue.png" src="_images/usingCellValue.png" />
+</div>
+<div class="section" id="hamcrest">
+<h2>Hamcrest<a class="headerlink" href="#hamcrest" title="Permalink to this headline">¶</a></h2>
+<p>Hamcrest is a text processing library for python that is incorporated into databaker. A full list of the filters it supports can be found here:</p>
+<p><a class="reference external" href="https://github.com/hamcrest/PyHamcrest">https://github.com/hamcrest/PyHamcrest</a></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Selection, Tips &amp; Tricks</a><ul>
+<li><a class="reference internal" href="#adding-and-subtracting-cells">Adding and Subtracting Cells</a></li>
+<li><a class="reference internal" href="#looking-at-xycells">Looking at XYCells</a></li>
+<li><a class="reference internal" href="#hamcrest">Hamcrest</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="selection.html" title="previous chapter">Selection Methods</a></li>
+      <li>Next: <a href="examples.html" title="next chapter">Examples</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/selectionAdvanced.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Michael Adams.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/selectionAdvanced.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
