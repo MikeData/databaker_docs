@@ -2,7 +2,7 @@
 A sphinx generator repo for databaker documentation.
 
 the "html version" of this repo. Can be found here:
-
+https://ons-opendata.github.io/databaker_docs/
 
 
 
