@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
 # build the docs
-cd docs
-/Users/adamsm/env_sphinx/bin/sphinx-build clean
-/Users/adamsm/env_sphinx/bin/sphinx-build  html
 cd ..
+sphinx-build -b html databaker_docs databaker_docs/docs
+cd databaker_docs
 
 # commit and push
 git add -A
