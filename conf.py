@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Databaker'
+project = 'Databaker Usage'
 copyright = '2018, Michael Adams'
 author = 'Michael Adams'
 
