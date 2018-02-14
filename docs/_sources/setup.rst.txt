@@ -15,7 +15,7 @@ Databaker should work on python2 but its mainly aimed at (and tested) on python 
 Windows Install
 ===============
 
-Install Anaconda python3 64bit (double check the download is for the python3.5+ version).
+Install Anaconda for windows (double check the download is for the python3.5+ version).
 
 From there you need to create a new environment with conda and install databaker plus a few dependancies with it.
 
@@ -56,7 +56,7 @@ PLEASE NOTE - on a mac <name of environment> will create a directory of that nam
 Environment
 ======
 
-Both examples assume you'll be using python virtual environments for running databaker (it's best -practice anyway).
+Both examples assume you'll be using python virtual environments for running databaker (it's best practice anyway).
 
 Before running any local transformation scripts, make sure the environment is actiated (either "activate <name of environment>" or "source /<name of environment>/bin/activate" depending on operating system.)
 
