@@ -125,7 +125,7 @@ https://github.com/hamcrest/PyHamcrest
 Other Sources
 =====
 
-In addition to the databaker 2 tutorials here:
+In addition to the databaker 2 tutorials here.
 https://github.com/sensiblecodeio/databaker/tree/master/databaker/tutorial
 
 There is also an excellent reference for databaker1 (we use databaker2).
@@ -136,7 +136,13 @@ https://sensiblecodeio.github.io/quickcode-ons-docs/lang/function_reference.html
 Bags
 ########
 
-for explanation of the "bag" concept, see here:
+A quick explanation of the "bag of cells" concept used by databaker under the hood:
+
+When you load a tab of data in databaker you are creating a virtual bag containing all the cells on a tab.
+When you select only cells A1 and A2 you are throwing all the other cells out of that bag.
+When you expand that selection you are putting cells back in.
+
+so the listed bag methods, are just ways of expanding or filtering a given selection of cells.
 
 * set Operators
 * bag.fill(direction)

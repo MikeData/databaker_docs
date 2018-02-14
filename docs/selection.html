@@ -107,14 +107,18 @@ tableRows = tab.excel_ref(“A2”).expand(DOWN)</p>
 </div>
 <div class="section" id="other-sources">
 <h2>Other Sources<a class="headerlink" href="#other-sources" title="Permalink to this headline">¶</a></h2>
-<p>In addition to the databaker 2 tutorials here:
+<p>In addition to the databaker 2 tutorials here.
 <a class="reference external" href="https://github.com/sensiblecodeio/databaker/tree/master/databaker/tutorial">https://github.com/sensiblecodeio/databaker/tree/master/databaker/tutorial</a></p>
 <p>There is also an excellent reference for databaker1 (we use databaker2).</p>
 <p>WARNING - Some of the functions have changed. So while its worth a look, stick to the listed shared functionality please.
 <a class="reference external" href="https://sensiblecodeio.github.io/quickcode-ons-docs/lang/function_reference.html">https://sensiblecodeio.github.io/quickcode-ons-docs/lang/function_reference.html</a></p>
 <div class="section" id="bags">
 <h3>Bags<a class="headerlink" href="#bags" title="Permalink to this headline">¶</a></h3>
-<p>for explanation of the “bag” concept, see here:</p>
+<p>A quick explanation of the “bag of cells” concept used by databaker under the hood:</p>
+<p>When you load a tab of data in databaker you are creating a virtual bag containing all the cells on a tab.
+When you select only cells A1 and A2 you are throwing all the other cells out of that bag.
+When you expand that selection you are putting cells back in.</p>
+<p>so the listed bag methods, are just ways of expanding or filtering a given selection of cells.</p>
 <ul class="simple">
 <li>set Operators</li>
 <li>bag.fill(direction)</li>
