@@ -130,7 +130,7 @@ In addition to the databaker 2 tutorials here:
 
 There is also an excellent reference for databaker1 (we use databaker2).
 
-WARNING - Some of the functions have changed. So while its worth a look, stick to the following shared functionality.
+WARNING - Some of the functions have changed. So while its worth a look, stick to the listed shared functionality please.
 https://sensiblecodeio.github.io/quickcode-ons-docs/lang/function_reference.html
 
 Bags
