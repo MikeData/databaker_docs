@@ -23,7 +23,7 @@ You can use something like beautifulSoup to monitor content on a web page (i.e w
 Responsive Transformations
 ======
 
-Python supports most message queue systems. Its relatively straight forward to turn a databaker script you run yourself into something that sits on a server as an on-demand service.
+Python supports most message queue systems. Its relatively straight forward (in development terms) to turn a databaker script you run yourself into something that sits on a server as an on-demand service.
 
 
 Dimensioned Dataset Viewer
