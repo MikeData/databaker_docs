@@ -5,7 +5,7 @@ The Four Stages
 
 You can roughly split every databaker extraction into four stages. Each stage serves a different purpose and has a few syntactic tools which will be covered in the relevant sections.
 
-Don't worry about understanding everything at once, the wakthrough will take us through some in-action
+Don't worry about understanding everything at once, the wakthrough will take us through the stages in-action
 
 
 1. Loading spreadsheets and tabs

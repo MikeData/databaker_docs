@@ -25,7 +25,7 @@ the same as .expand() but does not include the currently selected cells.
 
 i.e if you had B2 and B3 represented by variable foo. then
 
-`newFoo = foo.expand(RIGHT)`
+`newFoo = foo.fill(RIGHT)`
 
 would end with the variable newFoo containing all the cells on rows 2 and 3 except A2, B2, A3 and B3.
 
