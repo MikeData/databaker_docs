@@ -25,7 +25,6 @@ The intention of this mini-site is to help you get started if you're coming to t
    selection
    selectionAdvanced
    examples
-   pipelines
 
 
 Indices and tables
