@@ -26,6 +26,7 @@ The intention of this mini-site is to help you get started if you're coming to t
    selectionAdvanced
    extraction
    examples
+   output
 
 
 Indices and tables
