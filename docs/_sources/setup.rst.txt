@@ -11,39 +11,57 @@ A quick note on Python
 
 Databaker should work on python2 but its mainly aimed at (and tested) on python 3 and it's usually best to run it under that unless you've a powerful reason not to.
 
-Under windows it's easiest to install Anaconda python3 64bit (make sure it's the python3.5+ version, as a py2 version does exist).
 
-On a mac you can just:
+Windows Install
+===============
 
-`brew install python3`.
+Install Anaconda python3 64bit (double check the download is for the python3.5+ version).
+
+From there you need to create a new environment with conda and install databaker plus a few dependancies with it.
+
+Option1: Automatically
+
+There's a batch file here that'll do it: https://github.com/ONS-OpenData/dbinstall
+
+Option2: Manually on your command line
+
+execute the following on your command line
+
+* conda create --name <name of environment> python=3.5
+* activate <name of environment>
+* pip install --upgrade pip
+* pip install pandas
+* pip install databaker
+* pip install jupyter
 
 
-Environment
-===========
 
-You need to make sure you're in the correct python environment before doing the installations.
+MACOS
+=====
 
-WINDOWS USERS - You need to be on the command line, if using Anaconda (you should be) look for the anaconda command prompt in your installed programs, it should be there. That should open a version of your command prompt with the prefix (Anaconda).
+within a terminal execute the follow commands.
 
-MAC USERS - You'll need to create a new python3 environment for databaker work using virtual env. Navigate to a suitable directory then `python3 -m venv <env name>` followed by `source <env name>/bin/activate`.
+PLEASE NOTE - on a mac <name of environment> will create a directory of that name at your location.
+
+ * brew install python3
+ * python3 -m venv <name of environment>
+ * source /<name of environment>/bin/activate
+ * pip install --upgrade pip
+ * pip install pandas
+ * pip install databaker
+ * pip install jupyter
 
 
 
-Install
+Notes on IDE
 =========
 
-Use the following commands on the command line.
+Jupyer notebooks are typically used, as they have useful html table rendering and support a few nice databaker preview functions.
 
-`pip install pandas`
-
-`pip install databaker`
-
-`pip install jupyter`
-
-Some of these may say "already installed" but that's fine. Better safe than sorry.
+Though you'll need them installed to run databaker (they're automatically imported) they're not really required. if you'd prefer you can edit and use databaker as just python through whatever your IDE of choice is.
 
 
 Open a Jupyter Notebook
 =======================
 
-Still on the command line. If you enter 'jupyer notebook' it should spawn a new notebook for you to use.
+For anyone unfamiliar with notebooks. If you enter "jupyter notebook" from the command line (with your python env turned on) it'll start a local notebook server for you.

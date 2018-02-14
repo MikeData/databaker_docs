@@ -16,7 +16,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="The Four Stages" href="basics.html" />
-    <link rel="prev" title="Welcome to Databaker’s documentation!" href="index.html" />
+    <link rel="prev" title="ONS digital Publishing, Databaker Usage Guide" href="index.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -37,27 +37,48 @@
 <h2>A quick note on Python<a class="headerlink" href="#a-quick-note-on-python" title="Permalink to this headline">¶</a></h2>
 <p>A quick note on Python</p>
 <p>Databaker should work on python2 but its mainly aimed at (and tested) on python 3 and it’s usually best to run it under that unless you’ve a powerful reason not to.</p>
-<p>Under windows it’s easiest to install Anaconda python3 64bit (make sure it’s the python3.5+ version, as a py2 version does exist).</p>
-<p>On a mac you can just:</p>
-<p><cite>brew install python3</cite>.</p>
 </div>
-<div class="section" id="environment">
-<h2>Environment<a class="headerlink" href="#environment" title="Permalink to this headline">¶</a></h2>
-<p>You need to make sure you’re in the correct python environment before doing the installations.</p>
-<p>WINDOWS USERS - You need to be on the command line, if using Anaconda (you should be) look for the anaconda command prompt in your installed programs, it should be there. That should open a version of your command prompt with the prefix (Anaconda).</p>
-<p>MAC USERS - You’ll need to create a new python3 environment for databaker work using virtual env. Navigate to a suitable directory then <cite>python3 -m venv &lt;env name&gt;</cite> followed by <cite>source &lt;env name&gt;/bin/activate</cite>.</p>
+<div class="section" id="windows-install">
+<h2>Windows Install<a class="headerlink" href="#windows-install" title="Permalink to this headline">¶</a></h2>
+<p>Install Anaconda python3 64bit (double check the download is for the python3.5+ version).</p>
+<p>From there you need to create a new environment with conda and install databaker plus a few dependancies with it.</p>
+<p>Option1: Automatically</p>
+<p>There’s a batch file here that’ll do it: <a class="reference external" href="https://github.com/ONS-OpenData/dbinstall">https://github.com/ONS-OpenData/dbinstall</a></p>
+<p>Option2: Manually on your command line</p>
+<p>execute the following on your command line</p>
+<ul class="simple">
+<li>conda create –name &lt;name of environment&gt; python=3.5</li>
+<li>activate &lt;name of environment&gt;</li>
+<li>pip install –upgrade pip</li>
+<li>pip install pandas</li>
+<li>pip install databaker</li>
+<li>pip install jupyter</li>
+</ul>
 </div>
-<div class="section" id="install">
-<h2>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h2>
-<p>Use the following commands on the command line.</p>
-<p><cite>pip install pandas</cite></p>
-<p><cite>pip install databaker</cite></p>
-<p><cite>pip install jupyter</cite></p>
-<p>Some of these may say “already installed” but that’s fine. Better safe than sorry.</p>
+<div class="section" id="macos">
+<h2>MACOS<a class="headerlink" href="#macos" title="Permalink to this headline">¶</a></h2>
+<p>within a terminal execute the follow commands.</p>
+<p>PLEASE NOTE - on a mac &lt;name of environment&gt; will create a directory of that name at your location.</p>
+<blockquote>
+<div><ul class="simple">
+<li>brew install python3</li>
+<li>python3 -m venv &lt;name of environment&gt;</li>
+<li>source /&lt;name of environment&gt;/bin/activate</li>
+<li>pip install –upgrade pip</li>
+<li>pip install pandas</li>
+<li>pip install databaker</li>
+<li>pip install jupyter</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="notes-on-ide">
+<h2>Notes on IDE<a class="headerlink" href="#notes-on-ide" title="Permalink to this headline">¶</a></h2>
+<p>Jupyer notebooks are typically used, as they have useful html table rendering and support a few nice databaker preview functions.</p>
+<p>Though you’ll need them installed to run databaker (they’re automatically imported) they’re not really required. if you’d prefer you can edit and use databaker as just python through whatever your IDE of choice is.</p>
 </div>
 <div class="section" id="open-a-jupyter-notebook">
 <h2>Open a Jupyter Notebook<a class="headerlink" href="#open-a-jupyter-notebook" title="Permalink to this headline">¶</a></h2>
-<p>Still on the command line. If you enter ‘jupyer notebook’ it should spawn a new notebook for you to use.</p>
+<p>For anyone unfamiliar with notebooks. If you enter “jupyter notebook” from the command line (with your python env turned on) it’ll start a local notebook server for you.</p>
 </div>
 </div>
 
@@ -71,8 +92,9 @@
   <ul>
 <li><a class="reference internal" href="#">Setup</a><ul>
 <li><a class="reference internal" href="#a-quick-note-on-python">A quick note on Python</a></li>
-<li><a class="reference internal" href="#environment">Environment</a></li>
-<li><a class="reference internal" href="#install">Install</a></li>
+<li><a class="reference internal" href="#windows-install">Windows Install</a></li>
+<li><a class="reference internal" href="#macos">MACOS</a></li>
+<li><a class="reference internal" href="#notes-on-ide">Notes on IDE</a></li>
 <li><a class="reference internal" href="#open-a-jupyter-notebook">Open a Jupyter Notebook</a></li>
 </ul>
 </li>
@@ -81,7 +103,7 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="index.html" title="previous chapter">Welcome to Databaker’s documentation!</a></li>
+      <li>Previous: <a href="index.html" title="previous chapter">ONS digital Publishing, Databaker Usage Guide</a></li>
       <li>Next: <a href="basics.html" title="next chapter">The Four Stages</a></li>
   </ul></li>
 </ul>
