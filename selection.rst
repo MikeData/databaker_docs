@@ -126,7 +126,7 @@ Other Sources
 =====
 
 In addition to the databaker 2 tutorials here:
-
+https://github.com/sensiblecodeio/databaker/tree/master/databaker/tutorial
 
 There is also an excellent reference for databaker1 (we use databaker2).
 
