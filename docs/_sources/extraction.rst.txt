@@ -16,7 +16,7 @@ Leaving aside the another syntax, the following image highlights how we using th
 .. image:: /_static/relativeDimensions.png
 
 
-This is the most abstract part of the databaker process. Don;t worry about understanding it all straight away. It'll make plenty of sense after a few extractions.
+This is the most abstract part of the databaker process. Don't worry about understanding it all straight away. It'll make plenty of sense after a few extractions.
 
 
 Syntax
