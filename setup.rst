@@ -53,6 +53,14 @@ PLEASE NOTE - on a mac <name of environment> will create a directory of that nam
 
 
 
+Environment
+======
+
+Both examples assume you'll be using python virtual environments for running databaker (it's best -practice anyway).
+
+Before running any local transformation scripts, make sure the environment is actiated (either "activate <name of environment>" or "source /<name of environment>/bin/activate" depending on operating system.)
+
+
 Notes on IDE
 =========
 

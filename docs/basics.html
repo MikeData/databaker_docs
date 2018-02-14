@@ -33,12 +33,13 @@
             
   <div class="section" id="the-four-stages">
 <h1>The Four Stages<a class="headerlink" href="#the-four-stages" title="Permalink to this headline">¶</a></h1>
-<p>You can roughly split every databaker extraction into three stages. Each stage serves a different purpose and uses different syntactic tools which will be covered in its own section later.</p>
+<p>You can roughly split every databaker extraction into four stages. Each stage serves a different purpose and has a few syntactic tools which will be covered in the relevant sections.</p>
+<p>Don’t worry about understanding everything at once, the wakthrough will take us through some in-action</p>
 <div class="section" id="loading-spreadsheets-and-tabs">
 <h2>1. Loading spreadsheets and tabs<a class="headerlink" href="#loading-spreadsheets-and-tabs" title="Permalink to this headline">¶</a></h2>
 <p>This is a straight forward and won’t require its own section.</p>
 <img alt="_images/loadExcel.png" src="_images/loadExcel.png" />
-<p>We can ignore the lines regarding naming the output file. This is for later in the process.</p>
+<p>We can ignore the line regarding naming the output file. This is for later in the process.</p>
 </div>
 <div class="section" id="selection">
 <h2>2. Selection<a class="headerlink" href="#selection" title="Permalink to this headline">¶</a></h2>
@@ -55,13 +56,15 @@
 <p>This process consists of creating instructions that specify the relationship between those cells you have selected as your observations (the ‘values’ you are trying to extract). And those cells that contain the dimension for those observations.</p>
 <p>We’ll cover this in more detail later and in the walkthrough (it’s worth spending some time on understanding this part of the walkthrough).</p>
 <p>It may also be worth looking in the term “OLAP cube” if its unfamiliar. As it’s a help in understanding the goal of this stage.</p>
-<p>The stage will be covered in more detail later.</p>
+<p>This stage will be covered in more detail later.</p>
 </div>
-<div class="section" id="post-processing">
-<h2>4. Post Processing<a class="headerlink" href="#post-processing" title="Permalink to this headline">¶</a></h2>
-<p>This is the clean-up stage of the extraction. In some cases nothing extra will need to be done. But if additional cleaning operations are required this stage allows us to leverage the python Pandas dataframe for ad-hoc data cleaning functionality.</p>
-<p>If you’re unfamiliar with pandas then some basic tutorials around data loading and manipulation (ignore anything to with graphs and plotting) could be a valuable complementary learning path.</p>
-<p>The stage will be covered in more detail later.</p>
+<div class="section" id="output-the-results-as-a-csv">
+<h2>4. Output the Results as a CSV<a class="headerlink" href="#output-the-results-as-a-csv" title="Permalink to this headline">¶</a></h2>
+<p>This is the clean-up stage of the extraction and in the majority of cases is boiler plate code.</p>
+<p>In instances of particularly “dirty” data or awkward transformations you can freely shift processed databaker output into a pandas dataframe for additional processing (before anything is written to csv).</p>
+<p>It’s rarely necessary but serves as a good catch-all for outlier cases (pandas is a very powerful and well supported library).</p>
+<p>Any pandas-from-databaker dataframes will be handled and written by the databaker csvWriter in the exact same way as non dataframe output is.</p>
+<p>This stage will be covered in more detail later.</p>
 </div>
 </div>
 
@@ -77,7 +80,7 @@
 <li><a class="reference internal" href="#loading-spreadsheets-and-tabs">1. Loading spreadsheets and tabs</a></li>
 <li><a class="reference internal" href="#selection">2. Selection</a></li>
 <li><a class="reference internal" href="#extraction">3. Extraction</a></li>
-<li><a class="reference internal" href="#post-processing">4. Post Processing</a></li>
+<li><a class="reference internal" href="#output-the-results-as-a-csv">4. Output the Results as a CSV</a></li>
 </ul>
 </li>
 </ul>
