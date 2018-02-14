@@ -5,7 +5,7 @@ Further Usage
 
 This isn't really learning materials but I'm going to touch on it briefly.
 
-Databaker was designed with a firm eye on becoming part of an ETL (extraction transformation load) pipeline, and does so principally by being "just another pytohn library" which can freely interact with anything else in the python echosphere.
+Databaker was designed with a firm eye on becoming part of an ETL (extraction transformation load) pipeline, and does so principally by being "just another python library" which can freely interact with anything else in the python echosphere.
 
 Ad-hoc examples:
 ======
