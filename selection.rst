@@ -131,9 +131,13 @@ In addition to the databaker 2 tutorials here:
 There is also an excellent reference for databaker1 (we use databaker2).
 
 WARNING - Some of the functions have changed. So while its worth a look, stick to the following shared functionality.
+https://sensiblecodeio.github.io/quickcode-ons-docs/lang/function_reference.html
 
-Bags (for explanation of the "bag" concept, see here: )
------
+Bags
+########
+
+for explanation of the "bag" concept, see here:
+
 * set Operators
 * bag.fill(direction)
 * bag.expand(direction)
