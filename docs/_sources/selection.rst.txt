@@ -1,6 +1,6 @@
 
 =====
-Common Selection Methods
+Selection: Common Methods
 =====
 
 
@@ -120,3 +120,30 @@ Would find all of the cells on the tab containing the text "male" and assign the
 There are more filters covered as part of the pyHamCrest library incorporated into databaker:
 
 https://github.com/hamcrest/PyHamcrest
+
+
+Other Sources
+=============
+
+In addition to the databaker 2 tutorials here:
+
+
+There is also an excellent reference for databaker1 (we use databaker2).
+
+WARNING - Some of the functions have changed. So while its worth a look, stick to the following shared functionality.
+
+Bags
+-----
+set Operators
+bag.fill(direction)
+bag.expand(direction)
+bag.filter
+bag.one_of
+bag.shift
+bag.fill
+bag.expand
+bag.parent
+bag.children
+bag.same_row
+bag.same_column
+bag.waffle
