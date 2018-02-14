@@ -36,7 +36,7 @@ execute the following on your command line
 
 
 
-MACOS
+MAC OS
 =====
 
 within a terminal execute the follow commands.
