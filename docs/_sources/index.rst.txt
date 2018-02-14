@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-ONS digital Publishing, Databaker Usage Guide
+ONS Digital Publishing, Databaker Usage Guide
 =============================================
 
 This mini-site is intended as a quick-start and early reference for people
