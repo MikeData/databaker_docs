@@ -1,0 +1,135 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>The Four Stages &#8212; Databaker Usage 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Walkthrough" href="walkthrough.html" />
+    <link rel="prev" title="Setup" href="setup.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="the-four-stages">
+<h1>The Four Stages<a class="headerlink" href="#the-four-stages" title="Permalink to this headline">¶</a></h1>
+<p>You can roughly split every databaker extraction into four stages. Each stage serves a different purpose and has a few syntactic tools which will be covered in the relevant sections.</p>
+<p>Don’t worry about understanding everything at once, the wakthrough will take us through the stages in-action</p>
+<div class="section" id="loading-spreadsheets-and-tabs">
+<h2>1. Loading spreadsheets and tabs<a class="headerlink" href="#loading-spreadsheets-and-tabs" title="Permalink to this headline">¶</a></h2>
+<p>This is a straight forward and won’t require its own section.</p>
+<img alt="_images/loadExcel.png" src="_images/loadExcel.png" />
+<p>We can ignore the line regarding naming the output file. This is for later in the process.</p>
+</div>
+<div class="section" id="selection">
+<h2>2. Selection<a class="headerlink" href="#selection" title="Permalink to this headline">¶</a></h2>
+<p>This is wholly concerned with the logic behind selecting cells of data based on their content of formatting, then assigning that selection to a variable.</p>
+<p>Typical Examples:</p>
+<ul class="simple">
+<li>select all bold cells in column B and assign to a variable</li>
+<li>select all cells containing the text “female” from a tab and assign to a variable</li>
+</ul>
+<p>The syntax for this will be covered in more detail later.</p>
+</div>
+<div class="section" id="extraction">
+<h2>3. Extraction<a class="headerlink" href="#extraction" title="Permalink to this headline">¶</a></h2>
+<p>This process consists of creating instructions that specify the relationship between those cells you have selected as your observations (the ‘values’ you are trying to extract). And those cells that contain the dimension for those observations.</p>
+<p>We’ll cover this in more detail later and in the walkthrough (it’s worth spending some time on understanding this part of the walkthrough).</p>
+<p>It may also be worth looking in the term “OLAP cube” if its unfamiliar. As it’s a help in understanding the goal of this stage.</p>
+<p>This stage will be covered in more detail later.</p>
+</div>
+<div class="section" id="output-the-results-as-a-csv">
+<h2>4. Output the Results as a CSV<a class="headerlink" href="#output-the-results-as-a-csv" title="Permalink to this headline">¶</a></h2>
+<p>This is the clean-up stage of the extraction and in the majority of cases is boiler plate code.</p>
+<p>In instances of particularly “dirty” data or awkward transformations you can freely shift processed databaker output into a pandas dataframe for additional processing (before anything is written to csv).</p>
+<p>It’s rarely necessary but serves as a good catch-all for outlier cases (pandas is a very powerful and well supported library).</p>
+<p>Any pandas-from-databaker dataframes will be handled and written by the databaker csvWriter in the exact same way as non dataframe output is.</p>
+<p>This stage will be covered in more detail later.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">The Four Stages</a><ul>
+<li><a class="reference internal" href="#loading-spreadsheets-and-tabs">1. Loading spreadsheets and tabs</a></li>
+<li><a class="reference internal" href="#selection">2. Selection</a></li>
+<li><a class="reference internal" href="#extraction">3. Extraction</a></li>
+<li><a class="reference internal" href="#output-the-results-as-a-csv">4. Output the Results as a CSV</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="setup.html" title="previous chapter">Setup</a></li>
+      <li>Next: <a href="walkthrough.html" title="next chapter">Walkthrough</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/basics.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Michael Adams.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/basics.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
