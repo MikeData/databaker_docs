@@ -19,8 +19,6 @@ To update the documentation you need to install sphinx and the theme.
 
 Then change the relevent .rst file (or add some new ones) and run the publish.sh shell script. That will update this repo as well as the branch that "holds" the html version (the gh-pages branch).
 
-Documentation on how to write .rst files for sphinx can be found here:
-
 
 ## DO NOT COMMIT TO THIS REPO IN THE USUAL MANNER!
 

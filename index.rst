@@ -12,7 +12,6 @@ starting with spreadsheet transformation processes via databaker.
 For anyone already familiar with what databaker is and what it does, and for those that want to jump straight in, you can find the official documentation here:
 https://github.com/sensiblecodeio/databaker/tree/master/databaker/tutorial
 
-The intention of this mini-site is to help you get started if you're coming to this fresh.
 
 .. toctree::
    :maxdepth: 2
