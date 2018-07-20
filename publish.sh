@@ -15,7 +15,7 @@ rm -r .
 touch .nojekyll
 git checkout master docs
 mv docs/* ./
-rm -rf ./docs
+sudo rm -rf ./docs
 git add -A
 git commit -m "publishing updated docs..."
 git push origin gh-pages
