@@ -1,6 +1,6 @@
-======
+==================
 What is databaker?
-======
+==================
 
 Databaker is a python library for writing scripts than helps turn human readable spreadsheets into machine readable one-observation-per-row CSVs.
 
