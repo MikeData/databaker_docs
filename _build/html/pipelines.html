@@ -1,0 +1,237 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Further Usage &mdash; Databaker Usage 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Databaker Usage
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="whatisdatabaker.html">What is databaker?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basics.html">The Four Stages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="walkthrough.html">Walkthrough</a></li>
+<li class="toctree-l1"><a class="reference internal" href="selection.html">Selection: Common Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="selectionAdvanced.html">Selection, Tips &amp; Tricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extraction.html">Extraction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="output.html">Output to CSV</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Databaker Usage</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Further Usage</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/pipelines.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="further-usage">
+<h1>Further Usage<a class="headerlink" href="#further-usage" title="Permalink to this headline">¶</a></h1>
+<p>This isn’t really learning materials but I’m going to touch on it briefly.</p>
+<p>Databaker was designed with a firm eye on becoming part of an ETL (extraction transformation load) pipeline, and does so principally by being “just another python library” which can freely interact with anything else in the python echosphere.</p>
+<div class="section" id="ad-hoc-examples">
+<h2>Ad-hoc examples:<a class="headerlink" href="#ad-hoc-examples" title="Permalink to this headline">¶</a></h2>
+<p>This is pretty limitless, so I’ve just included a few non-standard things we’ve done as well as things we probably will at some point.</p>
+</div>
+<div class="section" id="automated-monitoring-and-processing">
+<h2>Automated Monitoring and Processing<a class="headerlink" href="#automated-monitoring-and-processing" title="Permalink to this headline">¶</a></h2>
+<p>You can use something like beautifulSoup to monitor content on a web page (i.e wait for the next release of spreadsheet x?). When its released you can get it with requests and databake it. No manual interaction required.</p>
+</div>
+<div class="section" id="responsive-transformations">
+<h2>Responsive Transformations<a class="headerlink" href="#responsive-transformations" title="Permalink to this headline">¶</a></h2>
+<p>Python supports most message queue systems. Its relatively straight forward (in development terms) to turn a databaker script you run yourself into something that sits on a server as an on-demand service.</p>
+</div>
+<div class="section" id="dimensioned-dataset-viewer">
+<h2>Dimensioned Dataset Viewer<a class="headerlink" href="#dimensioned-dataset-viewer" title="Permalink to this headline">¶</a></h2>
+<p>If you combine databaker with a little pandas and flask you could load a disorganised dataset straight into a user-friendly html embedded pivot table.</p>
+</div>
+<div class="section" id="analysis-from-uncleaned-data-sources">
+<h2>Analysis From Uncleaned Data Sources<a class="headerlink" href="#analysis-from-uncleaned-data-sources" title="Permalink to this headline">¶</a></h2>
+<p>This one is straight from the sensible code examples:
+<a class="reference external" href="https://github.com/sensiblecodeio/databaker/blob/master/databaker/tutorial/Real_world_example.ipynb">https://github.com/sensiblecodeio/databaker/blob/master/databaker/tutorial/Real_world_example.ipynb</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Michael Adams.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.1',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
